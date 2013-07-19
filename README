@@ -1,0 +1,17 @@
+Klaid - K Learning Aid
+Pops up kvtml file items on the desktop. Use KWordQuiz or FlashKard to produce
+kvtml files and load them into Klaid. It will grab all complete n x m
+related items (e.g. "Question" and "Answer", or "Word A" and "Word B") and
+displays them periodically as PopUps on the desktop. It is like someone is
+sitting behind you making sure you know all the terms for your next exam or
+test while surfing the web, coding, or whatever.
+
+Installation
+Extract the archive, run "make -f Makefile.cvs && ./configure --prefix=PATH"
+first. Insert your KDE base installation dir for PATH. In Debian sid that would
+be "/usr". Then compile by typing "make". You may then install the program (as
+root) via checkinstall or "make install".
+
+This program is GPL software. See COPYING for details.
+
+Rene Schmidt (rs at reneschmidt dot d-e)

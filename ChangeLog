@@ -1,0 +1,9 @@
+Planned for the next version: docs/help, german translation
+
+0.6-Please note: users who use KLAid frequently should feel obliged to give me some constructive feedback, whether it is positive or negative. This is how the community works. I would like to improve the software but I can't when nobody is going to tell me whats good or wrong with it. I am not promising that I do everything that you suggest but I will take everything into account. Thank you for your attention. Other improvements in this version: colors for popups customisable; program now saves and loads settings; fixed tab order
+
+0.3-new GUI layout (I am not yet satisfied with it, please give feedback), main.cpp bugfix (hopefully), fonts for popups customisable
+
+0.2-bugfix in GUI; system tray now has a tooltip, showing time the next popup will be shown (when timer is running)
+
+0.1-initial release

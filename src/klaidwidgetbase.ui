@@ -1,0 +1,578 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>KLAidWidgetBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>KLAid</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>420</width>
+            <height>348</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>400</width>
+            <height>325</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>799</width>
+            <height>599</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>400</width>
+            <height>325</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>klaidwidgetbase</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="toolTip" stdset="0">
+        <string></string>
+    </property>
+    <property name="whatsThis" stdset="0">
+        <string></string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QToolBox" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>toolBox1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="currentIndex">
+                <number>1</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>page1</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>File settings</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="text">
+                            <string>File to &amp;traverse:</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>urlLine</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Click the folder to select a valid KVTML file</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="1" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_2_2_2_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Repeat &amp;mode:</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>repModeBox</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Choose how often a set of popups should be repeated</string>
+                        </property>
+                    </widget>
+                    <widget class="KURLRequester" row="0" column="1" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>urlLine</cstring>
+                        </property>
+                        <property name="url" stdset="0">
+                            <string>23</string>
+                        </property>
+                        <property name="filter">
+                            <string>*.kvtml</string>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Click the folder to select a valid KVTML file</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" row="1" column="1">
+                        <item>
+                            <property name="text">
+                                <string>Infinite</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Custom</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>repModeBox</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Choose how often a set of popups should be repeated</string>
+                        </property>
+                    </widget>
+                    <widget class="QSpinBox" row="1" column="2">
+                        <property name="name">
+                            <cstring>loopsAmount</cstring>
+                        </property>
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="suffix">
+                            <string> loop(s)</string>
+                        </property>
+                        <property name="maxValue">
+                            <number>999</number>
+                        </property>
+                        <property name="minValue">
+                            <number>1</number>
+                        </property>
+                        <property name="value">
+                            <number>21</number>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Choose how often a set of popups should be repeated</string>
+                        </property>
+                    </widget>
+                    <spacer row="2" column="0" rowspan="1" colspan="3">
+                        <property name="name">
+                            <cstring>spacer10</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>290</width>
+                                <height>120</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>page2</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>PopUp settings</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Interval:</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>popUpInterval</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Time between two popups</string>
+                        </property>
+                    </widget>
+                    <widget class="QSpinBox" row="0" column="1">
+                        <property name="name">
+                            <cstring>popUpInterval</cstring>
+                        </property>
+                        <property name="suffix">
+                            <string></string>
+                        </property>
+                        <property name="maxValue">
+                            <number>59</number>
+                        </property>
+                        <property name="minValue">
+                            <number>1</number>
+                        </property>
+                        <property name="value">
+                            <number>23</number>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Time between two popups</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" row="0" column="2">
+                        <item>
+                            <property name="text">
+                                <string>seconds</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>minutes</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>pIntvalUnit</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Time between two popups</string>
+                        </property>
+                    </widget>
+                    <spacer row="1" column="3" rowspan="5" colspan="1">
+                        <property name="name">
+                            <cstring>spacer4</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>120</width>
+                                <height>160</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QLabel" row="1" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_2_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>C&amp;hance:</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>popUpChance</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Chance that a popup appears on the desktop</string>
+                        </property>
+                    </widget>
+                    <widget class="QSpinBox" row="1" column="1" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>popUpChance</cstring>
+                        </property>
+                        <property name="suffix">
+                            <string>%</string>
+                        </property>
+                        <property name="maxValue">
+                            <number>100</number>
+                        </property>
+                        <property name="minValue">
+                            <number>1</number>
+                        </property>
+                        <property name="value">
+                            <number>23</number>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Chance that a popup appears on the desktop</string>
+                        </property>
+                    </widget>
+                    <widget class="QSpinBox" row="2" column="1" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>minStay</cstring>
+                        </property>
+                        <property name="suffix">
+                            <string> seconds</string>
+                        </property>
+                        <property name="specialValueText">
+                            <string></string>
+                        </property>
+                        <property name="wrapping">
+                            <bool>false</bool>
+                        </property>
+                        <property name="buttonSymbols">
+                            <enum>UpDownArrows</enum>
+                        </property>
+                        <property name="maxValue">
+                            <number>60</number>
+                        </property>
+                        <property name="minValue">
+                            <number>1</number>
+                        </property>
+                        <property name="value">
+                            <number>23</number>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>While the popup stay time is computed automatically, you may define a minimum stay time here</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_2_2_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Minimum &amp;stay:</string>
+                        </property>
+                        <property name="buddy" stdset="0">
+                            <cstring>minStay</cstring>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>While the popup stay time is computed automatically, you may define a minimum stay time here</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="5" column="0" rowspan="1" colspan="3">
+                        <property name="name">
+                            <cstring>rndSeqBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Random sequence</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+R</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Sorts items in random order</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0" rowspan="1" colspan="3">
+                        <property name="name">
+                            <cstring>overlapPops</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Allow overlapping</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+A</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Allows KLAid to display more than one popup at a time</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="4" column="0" rowspan="1" colspan="3">
+                        <property name="name">
+                            <cstring>uniqueItemsBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Unique items per loop</string>
+                        </property>
+                        <property name="accel">
+                            <string>Alt+U</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>Guarantees that every item is shown in a loop</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>page</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Appearance</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="3" column="0">
+                        <property name="name">
+                            <cstring>textLabel2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>PopUp background color:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="0">
+                        <property name="name">
+                            <cstring>textLabel1_3</cstring>
+                        </property>
+                        <property name="text">
+                            <string>PopUp foreground color:</string>
+                        </property>
+                    </widget>
+                    <widget class="KColorButton" row="3" column="1">
+                        <property name="name">
+                            <cstring>bgCol</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Please pick a background color</string>
+                        </property>
+                    </widget>
+                    <widget class="KColorButton" row="2" column="1">
+                        <property name="name">
+                            <cstring>fgCol</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Please pick a foreground color</string>
+                        </property>
+                    </widget>
+                    <widget class="KFontRequester" row="1" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>kFontRequester2</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>1</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="maximumSize">
+                            <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                            </size>
+                        </property>
+                        <property name="title">
+                            <string>Please select a custom font</string>
+                        </property>
+                        <property name="sampleText">
+                            <string>Text body font</string>
+                        </property>
+                    </widget>
+                    <widget class="KFontRequester" row="0" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>kFontRequester1</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>1</hsizetype>
+                                <vsizetype>1</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>0</width>
+                                <height>0</height>
+                            </size>
+                        </property>
+                        <property name="maximumSize">
+                            <size>
+                                <width>32767</width>
+                                <height>32767</height>
+                            </size>
+                        </property>
+                        <property name="title">
+                            <string>Please select a custom font</string>
+                        </property>
+                        <property name="sampleText">
+                            <string>Caption font</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="5" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>textLabel1_4</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Please note: settings do not apply on status message popups.</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>cancelButton</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Cancel</string>
+            </property>
+            <property name="accel">
+                <string>Alt+C</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Abandons last changes and hides main window.</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="0">
+            <property name="name">
+                <cstring>okButton</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;OK</string>
+            </property>
+            <property name="accel">
+                <string>Alt+O</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="2442">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000951494441545885a597697096d515c77ff73ecbbbaf7993bc090192a09010411617100514adadadd071a9add67d5aabe3d8b12d4ea7d31967ba4d67faa9c317a7a37e10b12ead556bb5ae2028188840246ad80224210959de37cbbb3edbed8717caead27a66fe5fee3cf79cff3de77fcf3d8fe0abdacc157e3db4e42247e897a10556f9c3c1059aaef93c4f6195ad5e77f4c046e94d6df38677bc4ff140ff57752bbeec83c09cb5f545cdb8375c53734bebbcb9ad572c9a295b9baa48c74d423e49d9518c4cdaec1f2cd1ded9c7aecebd9991bd3bdea0ff8d27c8ef7be7eb1090f2fc9f3c189bbd74ed0dd75dd270ebaa269aab75c6732546274a58aec230746cdb45138a78d8a0361e64b42079694786a75fd9a97ab7bef882dafff74761acfb7f2330e3c77546b2fab195abd7ac7ee4d6f9a4432ebb8f4c305982e9d5411a92010ca918cc1449844d74436764d2a26728872e156df501f4409475af0ff2c2b3ff1a2a76acfb29935dcf9f2b9476f652f5acf08537be7cdf8377ac587bd37974f78ed2355066c99c042b5ae234c424262eb180c0b11dc20624838286b8c1c2c608a944906d07f31ce8cf70cb92248d6df3c2bbc69b6f2c0df74da8425ffb971068ae892c7ff8d5071fba75c1eac531deda7d8cf9b392cc9fe6472a97b2ede12108fa0d827e9d5cd92319f5e3f719945d452667610a452aac515713e5dd4fb2b4562b162d6c111de38ddf2cf6ef1950a5633b3f8f80e69b77fbfabb1eba7fe5d56d213ed89b61cda5f5d48505b60b635336336bc304fc3a0889a304e1a089a6491002d3d088040d86276d726587b8a1680819740c58d4056d9ae734b1fb58cdaa52efd62d38b9deb309a496ffe8ea7b7eb5f6a6e5f574ec1be1bb4b1bf009978205a9849f58c88787c4f5c05567c3f12a307d1ad5093febffb21dc772f9ce358d6cfa7482e6a44456351afb7bed85cec0e66781f22904c2a9e957ffe299bb6fbb327aa47f8495f3d324fc50b03ceaab02784a206545af9e02f579000241c1cbcf75a15c8f95d7cf6572aa4c5b6382addd63b4ce8870b85c9b1edddf99f10afd5b012480ac5f76c78a6b573538e502b190814fba8c4d59d4570570dc4ad013508012c7c14900f803b0e9cd1e0eed1fe5e6bb2e221935514a90cf15a84f04c88e4fb1747123d10b6eb81f489d2060d4b55df5c396f36a18c9e4b8725e35ba2628592e96ed21e02c48c741781e429c5cf307a06bd7305b371ee0cefb97629a1a8e5d213791b759de162757f638385a227dc1b226233efb5b1502467ddbacf90be72b3cd231837850626882b6193174294f0b2204080d126faf27f9f61308bdb2e6f3c140df142ffd7527dfbfeb6292293f8e0d8e8244d44f341a64bce871616314ab5c223e6d3ac1ba45d70142caf8cccb9ace6fd2c627f3b44d8f902bd8c443265282ae550248791c02840e6ea29640e716fc433d980128e66d9e79bc9debd65cc0f92d094a25b03c283be029412c68502c39b4d60749870581904964fa8245404a06eb165e14af8a6295cb4c4bfa504a11f249a4004d807e261494175f09a12a921dff44f73c363cb19d058b1a58b2bc817c013c4093e0d3c1af43c42f089a82b04fd25ced43d70591daa60620ad47524d0b345de05312bf2e509e20600a1c97d31af5894c683ae8be0053ab7e40dfc123bcbdfe63f014d7dfd842be08ba04fd94ad0a3034089992a009e9a88136ea1188c60268c9b46e9a5ac4f1c0af09b253258a96874031ad2af05f754b59b966f9bccd91c3190eef1be6a3411f1de99b39b4b797df2c32d101539ed9682b65cb151d26a64ab8b6852e3c4c5de00b06856606e2baf23c5b0928146caa2206655b918a9968c79d191aecde3dc4f3cfec229b29108b05a8ab0d119706766737b7d58db1fadb17e1b9609ee36501880635aaa326b1a086cfb0300d90cac5752d572f4e1c3b60e8b275ac60636ae07a82b05f431d3fbe04aa120156af99cb79e7a788c5fd047c1a1ef0402647ac7b2f2adb83136ead14ff1ca64981ae81dfd028390a5397b8e582833599915347777428cbc6f204e353369a00d7f1d0654584004d8d312ebf7c26e9da5025b8aad438960ca3e62c45ecdb8da63cb4e37b4e852e4028f03c0f500c4d3af80d4931339085f2982c0d1feac80ef4134d44e83c94251cd0295a6ea5e1880ace55d713cba2aa06fc11647f37f2943d272004946d179f2619cfbb8c153c0c29c91ee93a040c48ac23ed07f774f64f4bc7787f6f86a029992ada0c654b58cee7e4f44c6bbd04f67572ae1a8c4e96399a29511df3d1d19347067ce4c7b2640e75b40319098cedd9f2fa6b61cd6342996cfb64987cc9259bb3d0b573c8fa5c96ac6481beb3272f4fc178ae4ccf50818ffa4bc462417a3ff9b89c3bbae34d404980f1ee8d4feed8b4cd5abca889a7dfeb239df0130f9b789e3acbe1176761f76959f03c45d17259d01ca7fd6001dbe7c3ca5b746f7c6e0b58275f43c8b4fffba9c79e090a8fe8b46ad6bf758074dccf60b684e37e4512c91a3002d0df7dfce48a816c894448e7b3a3165da32eb5b55176bdfb5e6968cf4b4f0019386520298d75efc994ea6eb8e39e6b639b760d519a2ab2784e152313169a26982aba047cda17cff1e104b99d1f50a86f21937308f924e379c1531f8e32fdbc14fbbb867875ddc31bac899e3f03d66904806c5fd7eec37a7cee9adb6e5fa6bff2fe61c633052e6949315174992c7a44fc1ada29d7c2724e2a1dc00986291ed8c760364f5df30c8e8e29367c9861c6ec2a4647ca6cf8e3afb78f7ef6f223c0d1133e4eef5d2ad7ddd9de31e98bb75e73f79d97c9f6bd63bcbf7380da788059f5616c4751b0148e5769cda33985ab14aeabc8953d8a36045355d8f9229b06a37c70244fcbbc1423c72c9efcdd6f3f39b465ddcf801da7863cbb79da63db776ede3c9c2dd55c7ec7adcbfd91549037b7f773a0778a802149464c7ca686a10b5c5761681253af8c48e39336ed8306db32114444a3756e9c5d1dc33cf6e82fb7f76c5ef77360d399e1bea0a4a16be65c75dfef1f5afbc0c5cbaf9845ff709eaecf4628156ca2a6463468a26b1a9a10141d4549093c5da3b63eccb46901068f299edff066e1b5c7fff062ae6ff39f808fcf15e5cbfe0deb88b6de7bd9b5b7dd7ed3f7ae9fbd7cd95ca2111dc7f6701c0fcbf6d0740d4c0d4f800d7cb66f9c8d6fed28bcfb8fa7b7f777fced2928bccc71c5ff3f044ed82cf4f4376a665f7af59cb6456d2d17b4d5d5a6d361d3674a5709c6c627cbbd3d87c6f77ddad5dfd7ddbe2b7fb4e31db0b7708ad8be2e8113e6071a2ad052a08c8a8cbc12b8c3401f708ce333ff57b1ff005e1b0bba1adb05590000000049454e44ae426082</data>
+    </image>
+</images>
+<tabstops>
+    <tabstop>urlLine</tabstop>
+    <tabstop>repModeBox</tabstop>
+    <tabstop>loopsAmount</tabstop>
+    <tabstop>popUpInterval</tabstop>
+    <tabstop>pIntvalUnit</tabstop>
+    <tabstop>popUpChance</tabstop>
+    <tabstop>minStay</tabstop>
+    <tabstop>overlapPops</tabstop>
+    <tabstop>uniqueItemsBox</tabstop>
+    <tabstop>rndSeqBox</tabstop>
+    <tabstop>fgCol</tabstop>
+    <tabstop>bgCol</tabstop>
+    <tabstop>okButton</tabstop>
+    <tabstop>cancelButton</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">klaidwidgetbase.ui.h</include>
+</includes>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kurlrequester.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kfontrequester.h</includehint>
+    <includehint>kfontrequester.h</includehint>
+</includehints>
+</UI>
